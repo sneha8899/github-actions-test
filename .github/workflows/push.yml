@@ -5,15 +5,14 @@ on:
 jobs:
   ubuntu:
     runs-on: ubuntu-latest
-    needs: setup
     steps:
       - uses: actions/checkout@v3
-      - name: ubuntu 
+      - name: Sneha Test
         run: make hello && ./hello
 
   mac:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: macos
+      - name: Sneha Test
         run: make hello && ./hello
