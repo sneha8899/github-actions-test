@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sneha Test
-        run: make ../../hello.c && ./hello
+        run: make hello.c && ./hello
