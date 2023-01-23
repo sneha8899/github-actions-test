@@ -8,12 +8,12 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@v3
-      - name: ubuntu
+      - name: ubuntu 
         run: make hello && ./hello
 
   mac:
     runs-on: macos-latest
     steps:
-      - name: macos
       - uses: actions/checkout@v3
+      - name: macos
         run: make hello && ./hello
