@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Sneha Test
-        run: make hello && hello
+        run: make hello && ./hello
