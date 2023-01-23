@@ -3,19 +3,17 @@ on:
   push:
 
 jobs:
-  setup:
-    uses: actions/checkout@v3
-
   ubuntu:
     runs-on: ubuntu-latest
     needs: setup
     steps:
-      - name: Sneha Test
+      - uses: actions/checkout@v3
+      - name: ubuntu
         run: make hello && ./hello
 
   mac:
     runs-on: macos-latest
-    needs: setup
     steps:
-      - name: Sneha Test
+      - name: macos
+      - uses: actions/checkout@v3
         run: make hello && ./hello
