@@ -8,14 +8,14 @@ jobs:
 
   ubuntu:
     runs-on: ubuntu-latest
-    steps:
     needs: setup
+    steps:
       - name: Sneha Test
         run: make hello && ./hello
 
   mac:
     runs-on: macos-latest
-    steps:
     needs: setup
+    steps:
       - name: Sneha Test
         run: make hello && ./hello
